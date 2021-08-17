@@ -1,29 +1,15 @@
 import requests
-
-
-# token = "1966604778:AAFaH4Y3jmupxYGt324_1Uf6xRfy4ZseUvo"
-# chat_id = 775369387
-# chat_url = "https://api.telegram.org/bot"+token+'/sendMessage?chat_id='+chat_id+"&text="+msg
-
-
-# update_url = 'https://api.telegram.org/bot1966604778:AAFaH4Y3jmupxYGt324_1Uf6xRfy4ZseUvo/getupdates'
-# chat_url = 'https://api.telegram.org/bot1966604778:AAFaH4Y3jmupxYGt324_1Uf6xRfy4ZseUvo/sendMessage?chat_id=775369387&text=welcome'
 url = 'https://api.telegram.org/bot1966604778:AAFaH4Y3jmupxYGt324_1Uf6xRfy4ZseUvo/'
-
-
-# def get_updates(url):
-#     response = requests.get(url+'getUpdates').json()
-#     return response['result']
-
-
-# def get_message(data):
-#     # message = data['message']
-#     pass
-
 
 def send_message(url, chat_id, message):
     if message == 'hi':
         reply = ' hello, how are you..?'
+        send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
+        return send
+    elif message == '/start':
+        reply = '''
+        Nikal lovde, pehle fursat me nikal, koyi jarurat nayi hindustan ko teri, samjah?
+        '''
         send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
         return send
 
@@ -50,8 +36,6 @@ while True:
             try:
                 message = item['message']['text'].lower()
                 c_id = item['message']['from']['id']
-                send_message(url, message, c_id)
+                send_message(url, c_id, message)
             except:
                 message = None
-
-# print(data[0]['message']['text'])
