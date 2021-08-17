@@ -11,7 +11,7 @@ def send_message(url, chat_id, message):
         # return send
     elif message == '/start':
         reply = '''
-        Nikal lovde, pehle fursat me nikal, koyi jarurat nayi hindustan ko teri, samjah?
+        hello this is a telegram bot to download friends sitcom enter the required video in this format S**E** (ex: S02E21)
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
