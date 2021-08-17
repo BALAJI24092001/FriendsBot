@@ -21,7 +21,10 @@ def send_message(url, chat_id, message):
         requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
                       '&text='+'https://t.me/friends25yrs/151')
     elif message == 'friends':
-        requests.post(url + 'sendMessage?chat_id='+str(chat_id) + '&text= @imdb FRIENDS' )
+        requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
+                      '&text= https://mega.nz/file/4VswUaIB#wGvdagunBcgb6cVyU4VkSakP23kq4kFBP_5CCnu21Gs')
+        requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
+                      '&text='+'Decryption key = wGvdagunBcgb6cVyU4VkSakP23kq4kFBP_5CCnu21Gs')
 
 
 update_id = None
