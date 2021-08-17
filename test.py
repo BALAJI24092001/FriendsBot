@@ -1,19 +1,27 @@
 import requests
 url = 'https://api.telegram.org/bot1966604778:AAFaH4Y3jmupxYGt324_1Uf6xRfy4ZseUvo/'
 
+
 def send_message(url, chat_id, message):
     if message == 'hi':
         reply = ' hello, how are you..?'
-        send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
         print(send)
         # return send
     elif message == '/start':
         reply = '''
         Nikal lovde, pehle fursat me nikal, koyi jarurat nayi hindustan ko teri, samjah?
         '''
-        send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
         print(send)
         # return send
+    elif message == 's05e20':
+        requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
+                      '&text='+'https://t.me/friends25yrs/151')
+    elif message == 'friends':
+        requests.post(url + 'sendMessage?chat_id='+str(chat_id) + '&text= @imdb FRIENDS' )
 
 
 update_id = None
