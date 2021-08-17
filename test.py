@@ -5,13 +5,15 @@ def send_message(url, chat_id, message):
     if message == 'hi':
         reply = ' hello, how are you..?'
         send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
-        return send
+        print(send)
+        # return send
     elif message == '/start':
         reply = '''
         Nikal lovde, pehle fursat me nikal, koyi jarurat nayi hindustan ko teri, samjah?
         '''
         send = requests.post( url+'sendMessage?chat_id='+str(chat_id)+'&text='+reply )
-        return send
+        print(send)
+        # return send
 
 
 update_id = None
