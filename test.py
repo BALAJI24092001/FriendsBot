@@ -58,8 +58,8 @@ dict88 = {'s08e01': 'https://kuklink.com/1/bnYyZnh4MDAxMHU1', 's08e02': 'https:/
 dict99 = {'s09e01': 'https://kuklink.com/1/bnYyZnh4MDA1dG9l', 's09e02': 'https://kuklink.com/1/bnYyZnh4MDAxZTZx', 's09e03': 'https://kuklink.com/1/bnYyZnh4MDAxejZm', 's09e04': 'https://kuklink.com/1/bnYyZnh4MDAxMzAy', 's09e05': 'https://kuklink.com/1/bnYyZnh4MDAwMmlm', 's09e06': 'https://kuklink.com/1/bnYyZnh4MDAyOGF2', 's09e07': 'https://kuklink.com/1/bnYyZnh4MDAxejN3', 's09e08': 'https://kuklink.com/1/bnYyZnh4MDAzNm9l', 's09e09': 'https://kuklink.com/1/bnYyZnh4MDAwbnd2', 's09e10': 'https://kuklink.com/1/bnYyZnh4MDAwZmR0', 's09e11': 'https://kuklink.com/1/bnYyZnh4MDAxdnh0', 's09e12': 'https://kuklink.com/1/bnYyZnh4MDAzb3oz',
          's09e13': 'https://kuklink.com/1/bnYyZnk1MDA0OHhr', 's01e14': 'https://kuklink.com/1/bnYyZnk1MDA1Z3lz', 's09e15': 'https://kuklink.com/1/bnYyZnk1MDA1NzB3', 's09e16': 'https://kuklink.com/1/bnYyZnk1MDAwczRw', 's09e17': 'https://kuklink.com/1/bnYyZnk1MDAxcWw2', 's09e18': 'https://kuklink.com/1/bnYyZnk1MDAwNGM3', 's09e19': 'https://kuklink.com/1/bnYyZnk1MDA1YWdq', 's09e20': 'https://kuklink.com/1/bnYyZnk1MDA0ODho', 's09e21': 'https://kuklink.com/1/bnYyZnk1MDAyeXBk', 's09e22': 'https://kuklink.com/1/bnYyZnk1MDAxYjE5', 's09e23': 'https://kuklink.com/1/bnYyZnk1MDA1cXdz', 's09e24': 'https://kuklink.com/1/bnYyZnk1MDA1cXdz'}
 
-dict1010 = {'s010e01': 'https://kuklink.com/1/bnYyZnk1MDAyam5h', 's010e02': 'https://kuklink.com/1/bnYyZnk1MDA0cTFo', 's010e03': 'https://kuklink.com/1/bnYyZnk1MDA1cHNi', 's010e04': 'https://kuklink.com/1/bnYyZnk1MDA0M2Np', 's010e05': 'https://kuklink.com/1/bnYyZnk1MDAzang2', 's010e06': 'https://kuklink.com/1/bnYyZnk1MDAzaGZk', 's010e07': 'https://kuklink.com/1/bnYyZnk1MDAwbWs1', 's010e08': 'https://kuklink.com/1/bnYyZnk1MDA0dDEx', 's010e09': 'https://kuklink.com/1/bnYyZnk1MDAyZ3Y0', 's010e10': 'https://kuklink.com/1/bnYyZnk1MDAzcnpq', 's010e11': 'https://kuklink.com/1/bnYyZnk1MDAzZTVs', 's010e12': 'https://kuklink.com/1/bnYyZnk1MDAyMHVw',
-          's010e13': 'https://kuklink.com/1/bnYyZnk1MDAzYWdh', 's01e14': 'https://kuklink.com/1/bnYyZnk1MDAxcTM3', 's010e15': 'https://kuklink.com/1/bnYyZnk1MDA0bG9t', 's010e16': 'https://kuklink.com/1/bnYyZnk1MDAxYzR1', 's010e17': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh', 's010e18': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh'}
+dict1010 = {'s10e01': 'https://kuklink.com/1/bnYyZnk1MDAyam5h', 's10e02': 'https://kuklink.com/1/bnYyZnk1MDA0cTFo', 's10e03': 'https://kuklink.com/1/bnYyZnk1MDA1cHNi', 's10e04': 'https://kuklink.com/1/bnYyZnk1MDA0M2Np', 's10e05': 'https://kuklink.com/1/bnYyZnk1MDAzang2', 's10e06': 'https://kuklink.com/1/bnYyZnk1MDAzaGZk', 's10e07': 'https://kuklink.com/1/bnYyZnk1MDAwbWs1', 's10e08': 'https://kuklink.com/1/bnYyZnk1MDA0dDEx', 's10e09': 'https://kuklink.com/1/bnYyZnk1MDAyZ3Y0', 's10e10': 'https://kuklink.com/1/bnYyZnk1MDAzcnpq', 's10e11': 'https://kuklink.com/1/bnYyZnk1MDAzZTVs', 's10e12': 'https://kuklink.com/1/bnYyZnk1MDAyMHVw',
+          's10e13': 'https://kuklink.com/1/bnYyZnk1MDAzYWdh', 's10e14': 'https://kuklink.com/1/bnYyZnk1MDAxcTM3', 's10e15': 'https://kuklink.com/1/bnYyZnk1MDA0bG9t', 's10e16': 'https://kuklink.com/1/bnYyZnk1MDAxYzR1', 's10e17': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh', 's10e18': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh'}
 
 
 
@@ -123,51 +123,150 @@ def send_message(url, chat_id, message):
                              str(chat_id)+'&text='+reply)
 
     elif message in dict1.keys():
-        reply = dict1[message] 
+        reply1 = 'For Downloading 👇'
+        reply2 = dict1[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict11[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
 
     elif message in dict2.keys():
-        reply = dict2[message]
+        reply1 = 'For Downloading 👇'
+        reply2 = dict2[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict22[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
-
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
     elif message in dict3.keys():
-        reply = dict3[message]
+        reply1 = 'For Downloading 👇'
+        reply2 = dict3[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict33[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+
     elif message in dict4.keys():
-        reply = dict4[message] 
+        reply1 = 'For Downloading 👇'
+        reply2 = dict4[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict44[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
-
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
     elif message in dict5.keys():
-        reply = dict5[message]
+        reply1 = 'For Downloading 👇'
+        reply2 = dict5[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict55[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
-
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
     elif message in dict6.keys():
-        reply = dict6[message]
+        reply1 = 'For Downloading 👇'
+        reply2 = dict6[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict66[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+
     elif message in dict7.keys():
-        reply = dict7[message] 
+        reply1 = 'For Downloading 👇'
+        reply2 = dict7[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict77[message]
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
-
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
     elif message in dict8.keys():
-        reply = dict9[message]
+        reply1 = 'For Downloading 👇'
+        reply2 = dict8[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict88[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
+    elif message in dict9.keys():
+        reply1 = 'For Downloading 👇'
+        reply2 = dict9[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict99[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
+    elif message in dict10.keys():
+        reply1 = 'For Downloading 👇'
+        reply2 = dict10[message] 
+        reply3 = 'For Streaming 👇'
+        reply4 = dict1010[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply2)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply3)
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply4)
+    
+    elif message == 's01':
+        reply = dict1.values()
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
 
-    elif message in dict9.keys():
-        reply = dict9[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
-    elif message in dict10.keys():
-        reply = dict10[message] 
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
 
 
 update_id = None
