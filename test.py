@@ -263,9 +263,9 @@ def send_message(url, chat_id, message):
                              str(chat_id)+'&text='+reply4)
     
     elif message == 's01':
-        reply = dict1.values()
+        reply[] = dict1.values()
         send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+                             str(chat_id)+'&text='+reply[])
 
 
 
