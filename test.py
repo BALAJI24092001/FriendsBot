@@ -70,25 +70,20 @@ def send_message(url, chat_id, message):
                              str(chat_id)+'&text='+reply)
         print(send)
         # return send
-    elif message == '/start':
+        
+#start 
+    elif message =='/start':
+        reply ='''Hola! Iam a Bot here is the list of things u can do here
+                1.Download the most amazing sitcom ever , Yeah the F.R.I.E.N.D.S.(Enter the command 'download' to get the any episode)
+                2.if u already know the names of the characters enter any name and i will tell u briefly about them.
+                3.You wnna hear some special lines of the F.R.I.E.N.D.S name the character i will give you thier most iconic line. 
+                4.And lastly to know about the developers who made me type info)'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+
+#info
+    elif message == 'info':
         reply = '''
-        Hey there,
-        I know you started me(the bot) probably to download
-        the F.R.I.E.N.D.S series, but before you carray on
-        with downloading, let me just give you an overview
-        of what you can do with me.
-
-        To download use the command `S01E01` to get first
-        episode of season 1.
-
-        To download a full season use `s02` (season 2).
-
-        To know number of episodes in each season use
-        `episodes` command.
-
-        To get details of the main charecters use their
-        first name as the command. eg.. (chandler)
-
+       Hey there! we are one of the biggest fans of the sitcom F.R.I.E.N.D.S so we wanted to make this available for all people so they can watch like us and enjoy
         For any suggestions or complaints to report contact
         @dbalajivaraprasad
         @CHAKRADHAR_GBG
@@ -97,11 +92,6 @@ def send_message(url, chat_id, message):
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
-        # print(send)
-        # return send
-
-    # Abhiram_Avala_Start
-    # Abhiram_Avala
 
     elif message in dict1.keys():
         reply = dict1[message] 
