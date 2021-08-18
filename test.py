@@ -28,8 +28,8 @@ dict8 = {'s08e01': 'https://t.me/friendscompletesubtitle/682', 's08e02': 'https:
 dict9 = {'s09e01': 'https://t.me/friendscompletesubtitle/708', 's09e02': 'https://t.me/friendscompletesubtitle/709', 's09e03': 'https://t.me/friendscompletesubtitle/710', 's09e04': 'https://t.me/friendscompletesubtitle/711', 's09e05': 'https://t.me/friendscompletesubtitle/712', 's09e06': 'https://t.me/friendscompletesubtitle/713', 's09e07': 'https://t.me/friendscompletesubtitle/714', 's09e08': 'https://t.me/friendscompletesubtitle/715', 's09e09': 'https://t.me/friendscompletesubtitle/716', 's09e10': 'https://t.me/friendscompletesubtitle/717', 's09e11': 'https://t.me/friendscompletesubtitle/718', 's09e12': 'https://t.me/friendscompletesubtitle/719',
           's09e13': 'https://t.me/friendscompletesubtitle/720', 's01e14': 'https://t.me/friendscompletesubtitle/721', 's09e15': 'https://t.me/friendscompletesubtitle/722', 's09e16': 'https://t.me/friendscompletesubtitle/723', 's09e17': 'https://t.me/friendscompletesubtitle/724', 's09e18': 'https://t.me/friendscompletesubtitle/725', 's09e19': 'https://t.me/friendscompletesubtitle/726', 's09e20': 'https://t.me/friendscompletesubtitle/727', 's09e21': 'https://t.me/friendscompletesubtitle/728', 's09e22': 'https://t.me/friendscompletesubtitle/729', 's09e23': 'https://t.me/friendscompletesubtitle/730', 's09e24': 'https://t.me/friendscompletesubtitle/730'}
 
-dict10 = {'s010e01': 'https://t.me/friendscompletesubtitle/732', 's010e02': 'https://t.me/friendscompletesubtitle/733', 's010e03': 'https://t.me/friendscompletesubtitle/734', 's010e04': 'https://t.me/friendscompletesubtitle/735', 's010e05': 'https://t.me/friendscompletesubtitle/737', 's010e06': 'https://t.me/friendscompletesubtitle/738', 's010e07': 'https://t.me/friendscompletesubtitle/739', 's010e08': 'https://t.me/friendscompletesubtitle/740', 's010e09': 'https://t.me/friendscompletesubtitle/741', 's010e10': 'https://t.me/friendscompletesubtitle/742', 's010e11': 'https://t.me/friendscompletesubtitle/743', 's010e12': 'https://t.me/friendscompletesubtitle/744',
-            's010e13': 'https://t.me/friendscompletesubtitle/745', 's01e14': 'https://t.me/friendscompletesubtitle/746', 's010e15': 'https://t.me/friendscompletesubtitle/747', 's010e16': 'https://t.me/friendscompletesubtitle/748', 's010e17': 'https://t.me/friendscompletesubtitle/749', 's010e18': 'https://t.me/friendscompletesubtitle/749'}
+dict10 = {'s10e01': 'https://t.me/friendscompletesubtitle/732', 's10e02': 'https://t.me/friendscompletesubtitle/733', 's10e03': 'https://t.me/friendscompletesubtitle/734', 's10e04': 'https://t.me/friendscompletesubtitle/735', 's10e05': 'https://t.me/friendscompletesubtitle/737', 's10e06': 'https://t.me/friendscompletesubtitle/738', 's10e07': 'https://t.me/friendscompletesubtitle/739', 's10e08': 'https://t.me/friendscompletesubtitle/740', 's10e09': 'https://t.me/friendscompletesubtitle/741', 's10e10': 'https://t.me/friendscompletesubtitle/742', 's10e11': 'https://t.me/friendscompletesubtitle/743', 's10e12': 'https://t.me/friendscompletesubtitle/744',
+            's10e13': 'https://t.me/friendscompletesubtitle/745', 's10e14': 'https://t.me/friendscompletesubtitle/746', 's10e15': 'https://t.me/friendscompletesubtitle/747', 's10e16': 'https://t.me/friendscompletesubtitle/748', 's10e17': 'https://t.me/friendscompletesubtitle/749', 's10e18': 'https://t.me/friendscompletesubtitle/749'}
 
 dict11 = {'s01e01': 'https://kuklink.com/1/bnYyZnZ0MDAxdWh5', 's01e02': 'https://kuklink.com/1/bnYyZnZ4MDAwMmI1', 's01e03': 'https://kuklink.com/1/bnYyZnZ4MDAwNXN6', 's01e04': 'https://kuklink.com/1/bnYyZnZ4MDAwMGY4', 's01e05': 'http://www.pdisk.net/share-video?videoid=nv2fvx000ea1', 's01e06': 'https://kuklink.com/1/bnYyZnZ4MDAwb2Rx', 's01e07': 'https://kuklink.com/1/bnYyZnZ4MDAwdHB3', 's01e08': 'https://kuklink.com/1/bnYyZnZ4MDAwbWxk', 's01e09': 'https://kuklink.com/1/bnYyZnZ4MDAwYmFj', 's01e10': 'https://kuklink.com/1/bnYyZnZ4MDAwc2o1', 's01e11': 'https://kuklink.com/1/bnYyZnZ4MDAwams1', 's01e12': 'https://kuklink.com/1/bnYyZnZ4MDAwZDN1',
           's01e13': 'https://kuklink.com/1/bnYyZnZ4MDAwYmM2', 's01e14': 'https://kuklink.com/1/bnYyZnZ4MDAwNHM3', 's01e15': 'https://kuklink.com/1/bnYyZnZ4MDAwbG0y', 's01e16': 'https://kuklink.com/1/bnYyZnZ4MDAwaDBz', 's01e17': 'https://kuklink.com/1/bnYyZnZ4MDAwaWpp', 's01e18': 'https://kuklink.com/1/bnYyZnZ4MDAwOTZ2', 's01e19': 'https://kuklink.com/1/bnYyZnZ4MDAweXpj', 's01e20': 'https://kuklink.com/1/bnYyZnZ4MDAwOGw5', 's01e21': 'https://kuklink.com/1/bnYyZnZ4MDAwa3Rw', 's01e22': 'https://kuklink.com/1/bnYyZnZ4MDAwbjhk', 's01e23': 'https://kuklink.com/1/bnYyZnZ4MDAwbDBm', 's01e24': 'https://kuklink.com/1/bnYyZnZ4MDAwbnhr'}
@@ -105,6 +105,38 @@ def send_message(url, chat_id, message):
 
     elif message in dict3.keys():
         reply = dict3[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+    elif message in dict4.keys():
+        reply = dict4[message] 
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in dict5.keys():
+        reply = dict5[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in dict6.keys():
+        reply = dict6[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+    elif message in dict7.keys():
+        reply = dict7[message] 
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in dict8.keys():
+        reply = dict9[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in dict9.keys():
+        reply = dict9[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+    elif message in dict10.keys():
+        reply = dict10[message] 
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
 
