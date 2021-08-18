@@ -108,22 +108,14 @@ def send_message(url, chat_id, message):
       
 
     elif message in dict2.keys():
-        for i in dict2:
-            if message == i:
-                reply = dict2[i]
-                send = requests.post(url+'sendMessage?chat_id=' +
+        reply = dict2[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
                                      str(chat_id)+'&text='+reply)
 
     elif message in dict3.keys():
-        for i in dict3:
-            if message == i:
-                reply = dict3[i]
-                send = requests.post(url+'sendMessage?chat_id=' +
+        reply = dict3[message]
+        send = requests.post(url+'sendMessage?chat_id=' +
                                      str(chat_id)+'&text='+reply)
-
-    # Abhiram_Avala
-    # Abhiram_Avala_End
-
 
 update_id = None
 
