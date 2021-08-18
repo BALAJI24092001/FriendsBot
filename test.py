@@ -72,11 +72,16 @@ def send_message(url, chat_id, message):
         
 #start 
     elif message =='/start':
-        reply ='''Hola! Iam a Bot here is the list of things u can do here
-                1.Download the most amazing sitcom ever , Yeah the F.R.I.E.N.D.S.(Enter the command 'download' to get the any episode)
-                2.if u already know the names of the characters enter any name and i will tell u briefly about them.
-                3.You wnna hear some special lines of the F.R.I.E.N.D.S name the character i will give you thier most iconic line. 
-                4.And lastly to know about the developers who made me type info)'''
+        reply ='''
+        Hola! 
+        I'm the F.R.I.E.N.D.S bot, here to help you with downloing the series.
+
+                i.      Use `s01e01` to download episode 1 of season 1.
+                ii.     Use `s05` to download season 5 all episodes.
+                iii.    If you want to know more about the series and some interesting facts about our main charecters,use their first name as the command.
+                iv.     For any help regarding the commands, use the command `help` or `/help`. 
+                4.And lastly to know about the developers who made me type info)
+                '''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
 #info
