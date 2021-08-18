@@ -1,5 +1,9 @@
 import requests
+from requests.api import request
 url = 'https://api.telegram.org/bot1974553065:AAGm9ZRmLymL9bWx-inSxEIKLTigQHGgtT4/'
+
+s01 = {'0': 'https://t.me/friends25yrs/6', '1': 'https://t.me/friends25yrs/7', '2': 'https://t.me/friends25yrs/8', '3': 'https://t.me/friends25yrs/11', '4': 'https://t.me/friends25yrs/13', '5': 'https://t.me/friends25yrs/14', '6': 'https://t.me/friends25yrs/15', '7': 'https://t.me/friends25yrs/16', '8': 'https://t.me/friends25yrs/17', '9': 'https://t.me/friends25yrs/20', '10': 'https://t.me/friends25yrs/21', '11': 'https://t.me/friends25yrs/22',
+         '12': 'https://t.me/friends25yrs/23', '13': 'https://t.me/friends25yrs/24', '14': 'https://t.me/friends25yrs/25', '15': 'https://t.me/friends25yrs/27', '16': 'https://t.me/friends25yrs/28', '17': 'https://t.me/friends25yrs/29', '18': 'https://t.me/friends25yrs/30', '19': 'https://t.me/friends25yrs/31', '20': 'https://t.me/friends25yrs/32', '21': 'https://t.me/friends25yrs/33', '22': 'https://t.me/friends25yrs/35', '23': 'https://t.me/friends25yrs/37'}
 
 dict1 = {'s01e01': 'https://t.me/friends25yrs/6', 's01e02': 'https://t.me/friends25yrs/7', 's01e03': 'https://t.me/friends25yrs/8', 's01e04': 'https://t.me/friends25yrs/11', 's01e05': 'https://t.me/friends25yrs/13', 's01e06': 'https://t.me/friends25yrs/14', 's01e07': 'https://t.me/friends25yrs/15', 's01e08': 'https://t.me/friends25yrs/16', 's01e09': 'https://t.me/friends25yrs/17', 's01e10': 'https://t.me/friends25yrs/20', 's01e11': 'https://t.me/friends25yrs/21', 's01e12': 'https://t.me/friends25yrs/22',
          's01e13': 'https://t.me/friends25yrs/23', 's01e14': 'https://t.me/friends25yrs/24', 's01e15': 'https://t.me/friends25yrs/25', 's01e16': 'https://t.me/friends25yrs/27', 's01e17': 'https://t.me/friends25yrs/28', 's01e18': 'https://t.me/friends25yrs/29', 's01e19': 'https://t.me/friends25yrs/30', 's01e20': 'https://t.me/friends25yrs/31', 's01e21': 'https://t.me/friends25yrs/32', 's01e22': 'https://t.me/friends25yrs/33', 's01e23': 'https://t.me/friends25yrs/35', 's01e24': 'https://t.me/friends25yrs/37'}
@@ -263,14 +267,12 @@ def send_message(url, chat_id, message):
                              str(chat_id)+'&text='+reply4)
     
     elif message == 's01':
-        a[i] = dict1.values()
-        for i in dict1:
-            reply = a[i]
+        for i in len(s01):
+            reply = s01[str(i)]
             send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply[])
-
-
-
+                             str(chat_id)+'&text='+reply)
+        
+        
 update_id = None
 
 
