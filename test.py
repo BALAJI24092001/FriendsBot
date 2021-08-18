@@ -97,14 +97,6 @@ def send_message(url, chat_id, message):
                              str(chat_id)+'&text='+reply)
         # print(send)
         # return send
-    elif message == 's05e20':
-        requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
-                      '&text='+'https://t.me/friends25yrs/151')
-    elif message == 'friends':
-        requests.post(url + 'sendMessage?chat_id='+str(chat_id) +
-                      '&text= https://mega.nz/file/4VswUaIB#wGvdagunBcgb6cVyU4VkSakP23kq4kFBP_5CCnu21Gs')
-        requests.post(url + 'sendMessage?chat_id='+str(chat_id)+'&text=' +
-                      'Decryption key = wGvdagunBcgb6cVyU4VkSakP23kq4kFBP_5CCnu21Gs')
 
     # Abhiram_Avala_Start
     # Abhiram_Avala
@@ -116,14 +108,14 @@ def send_message(url, chat_id, message):
       
 
     elif message in dict2.keys():
-        for i in list2:
+        for i in dict2:
             if message == i:
                 reply = dict2[i]
                 send = requests.post(url+'sendMessage?chat_id=' +
                                      str(chat_id)+'&text='+reply)
 
     elif message in dict3.keys():
-        for i in list3:
+        for i in dict3:
             if message == i:
                 reply = dict3[i]
                 send = requests.post(url+'sendMessage?chat_id=' +
