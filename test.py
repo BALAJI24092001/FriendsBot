@@ -116,17 +116,25 @@ def send_message(url, chat_id, message):
         Hello Hooman! 
         I'm here to help you know 
         about the commands.
-        To get the 1st episode of 1st 
-        season, use 's01e01'
-        Similarly, for 17th episode in 
-        10th season, use 's10e17'
-        And to get the full season, 
-        use 's01', 's07', 's10',...etc
-        If you want to know more about 
-        the series and some interesting 
-        facts about our main charecters, 
-        use their first name as the 
-        command.
+        Command   - Reply
+        's01e01' - Season 1 Episode 1
+        's10e14' - Season 10 Episode 14
+        's01'    - Season 1 All Episodes
+        's10'    - Season 10 All Episodes
+        Character Name - Best Dialogue
+
+        Number of Episodes in each season
+        Season 1 - 24
+        Season 2 - 24
+        Season 3 - 25
+        Season 4 - 23
+        Season 5 - 24
+        Season 6 - 25
+        Season 7 - 24
+        Season 8 - 24
+        Season 9 - 24
+        Season 10 - 18
+
         My creators are always there to 
         help you out.
         For any further help, please contact
