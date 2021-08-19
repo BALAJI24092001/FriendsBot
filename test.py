@@ -118,33 +118,55 @@ PS: The episode and season commands give you two ways to access the series. One,
     elif message == 'help':
         reply = '''
         Hello Hooman! 
+
         I'm here to help you know 
         about the commands.
+
         Command   - Reply
+
         's01e01' - Season 1 Episode 1
         's10e14' - Season 10 Episode 14
+
         's01'    - Season 1 All Episodes
         's10'    - Season 10 All Episodes
-        Character Name - Best Dialogue
 
-        Number of Episodes in each season
-        Season 1 - 24
-        Season 2 - 24
-        Season 3 - 25
-        Season 4 - 23
-        Season 5 - 24
-        Season 6 - 25
-        Season 7 - 24
-        Season 8 - 24
-        Season 9 - 24
-        Season 10 - 18
+        Character Name - About the 
+        Character
+
+        Friends - Description of Freinds 
+        Series
+
+        Episodes - Number of episodes in 
+        each season
+
+        info - About the Developers
 
         My creators are always there to 
         help you out.
-        For any further help, please contact
+        For any further help, please 
+        contact
         @dbalajivaraprasad
         @CHAKRADHAR_GBG
         @abhiramavala
+        '''
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+
+    #episodes
+    elif message == 'episodes':
+        reply = '''
+        Number of Episodes in each season
+        Season 1 - 24 Episodes
+        Season 2 - 24 Episodes
+        Season 3 - 25 Episodes
+        Season 4 - 23 Episodes
+        Season 5 - 24 Episodes
+        Season 6 - 25 Episodes
+        Season 7 - 24 Episodes
+        Season 8 - 24 Episodes
+        Season 9 - 24 Episodes
+        Season 10 - 18 Episodes
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
