@@ -116,7 +116,7 @@ PS: The episode and season commands give you two ways to access the series. One,
                              str(chat_id)+'&text='+reply)
 
     # help
-    elif message == 'help':
+    elif message == 'help' or message == '/help':
         reply = '''
         Hello Hooman! 
 
