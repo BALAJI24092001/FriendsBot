@@ -61,17 +61,37 @@ dict99 = {'s09e01': 'https://kuklink.com/1/bnYyZnh4MDA1dG9l', 's09e02': 'https:/
 dict1010 = {'s10e01': 'https://kuklink.com/1/bnYyZnk1MDAyam5h', 's10e02': 'https://kuklink.com/1/bnYyZnk1MDA0cTFo', 's10e03': 'https://kuklink.com/1/bnYyZnk1MDA1cHNi', 's10e04': 'https://kuklink.com/1/bnYyZnk1MDA0M2Np', 's10e05': 'https://kuklink.com/1/bnYyZnk1MDAzang2', 's10e06': 'https://kuklink.com/1/bnYyZnk1MDAzaGZk', 's10e07': 'https://kuklink.com/1/bnYyZnk1MDAwbWs1', 's10e08': 'https://kuklink.com/1/bnYyZnk1MDA0dDEx', 's10e09': 'https://kuklink.com/1/bnYyZnk1MDAyZ3Y0', 's10e10': 'https://kuklink.com/1/bnYyZnk1MDAzcnpq', 's10e11': 'https://kuklink.com/1/bnYyZnk1MDAzZTVs', 's10e12': 'https://kuklink.com/1/bnYyZnk1MDAyMHVw',
             's10e13': 'https://kuklink.com/1/bnYyZnk1MDAzYWdh', 's10e14': 'https://kuklink.com/1/bnYyZnk1MDAxcTM3', 's10e15': 'https://kuklink.com/1/bnYyZnk1MDA0bG9t', 's10e16': 'https://kuklink.com/1/bnYyZnk1MDAxYzR1', 's10e17': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh', 's10e18': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh'}
 
-wishes = ['hi', 'hello', 'hey', 'hai', 'hii']
-
+wishes1 = ['hi', 'hello', 'hey', 'hai', 'hii']
+wishes2 = ['good morning', 'gud mrng', 'morning']
+wishes3 = ['good enening', 'gud evng', 'good evng', 'evening']
+wishes4 = ['good night', 'gud night', 'gud ngt']
 
 def send_message(url, chat_id, message):
-    if message in wishes:
+    if message in wishes1:
         reply = "How u doin'😉"
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
-        # return send
 
-# start
+    elif message in wishes2:
+        reply = 'Very goog moring, hope you had a good sleep.'
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in wishes3:
+        reply = 'Good evening.'
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in wishes4:
+        reply = 'Good night, have a good sleep.'
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+    elif message in ['thanks', 'thank you', 'thanks a lot', 'Thanks for the help', 'tnks']:
+        reply = 'Anything for you!'
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
     elif message == '/start':
         reply = '''
 Hola! 
@@ -94,7 +114,7 @@ PS: The episode and season commands give you two ways to access the series. One,
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
 
-#help 
+    # help
     elif message == 'help':
         reply = '''
         Hello Hooman! 
@@ -137,16 +157,26 @@ PS: The episode and season commands give you two ways to access the series. One,
     # BALAJI
     elif message == 'friends':
         reply = '''
-        Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons.
-        Starring	
-Jennifer Aniston
-Courteney Cox
-Lisa Kudrow
-Matt LeBlanc
-Matthew Perry
-David Schwimmer
-        '''
-        
+Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons.
+
+Starring:	
+Jennifer Aniston as Racheal Green
+Courteney Cox as Monica Geller
+Lisa Kudrow as Phoebe Buffay
+Matt LeBlanc as Joey Tribbiani
+Matthew Perry as Chandler Bing
+David Schwimmer as Ross Geller
+
+Opening theme song, "I'll be There for You" by "The Rembrandts".
+
+Running time:
+20–22 minutes (per episode)
+22–65 minutes (extended international TV & DVD episodes)
+
+Seasons : 10
+Episodes: 236
+    '''
+
     # BALAJI
 
     elif message in dict1.keys():
@@ -291,71 +321,70 @@ David Schwimmer
 
     # season 1
     elif message == 's01':
-        getData(dict1,chat_id,"For Downloading 👇")
-        getData(dict11,chat_id,"For Streaming 👇")
+        getData(dict1, chat_id, "For Downloading 👇")
+        getData(dict11, chat_id, "For Streaming 👇")
 
     # season 2
     elif message == 's02':
-        getData(dict2,chat_id,"For Downloading 👇")
-        getData(dict22,chat_id,"For Streaming 👇")
+        getData(dict2, chat_id, "For Downloading 👇")
+        getData(dict22, chat_id, "For Streaming 👇")
 
     # season 3
     elif message == 's03':
-        getData(dict3,chat_id,"For Downloading 👇")
-        getData(dict33,chat_id,"For Streaming 👇")
+        getData(dict3, chat_id, "For Downloading 👇")
+        getData(dict33, chat_id, "For Streaming 👇")
 
     # season 4
     elif message == 's04':
-        getData(dict4,chat_id,"For Downloading 👇")
-        getData(dict44,chat_id,"For Streaming 👇")
+        getData(dict4, chat_id, "For Downloading 👇")
+        getData(dict44, chat_id, "For Streaming 👇")
 
     # season 5
     elif message == 's05':
-        getData(dict5,chat_id,"For Downloading 👇")
-        getData(dict55,chat_id,"For Streaming 👇")
+        getData(dict5, chat_id, "For Downloading 👇")
+        getData(dict55, chat_id, "For Streaming 👇")
 
     # season 6
     elif message == 's06':
-        getData(dict6,chat_id,"For Downloading 👇")
-        getData(dict66,chat_id,"For Streaming 👇")
+        getData(dict6, chat_id, "For Downloading 👇")
+        getData(dict66, chat_id, "For Streaming 👇")
 
     # season 7
     elif message == 's07':
-        getData(dict7,chat_id,"For Downloading 👇")
-        getData(dict77,chat_id,"For Streaming 👇")
-
+        getData(dict7, chat_id, "For Downloading 👇")
+        getData(dict77, chat_id, "For Streaming 👇")
 
     # season 8
     elif message == 's08':
-        getData(dict8,chat_id,"For Downloading 👇")
-        getData(dict88,chat_id,"For Streaming 👇")
-
+        getData(dict8, chat_id, "For Downloading 👇")
+        getData(dict88, chat_id, "For Streaming 👇")
 
     # season 9
     elif message == 's09':
-       getData(dict9,chat_id,"For Downloading 👇")
-       getData(dict99,chat_id,"For Streaming 👇")
-
+        getData(dict9, chat_id, "For Downloading 👇")
+        getData(dict99, chat_id, "For Streaming 👇")
 
     # season 10
     elif message == 's010':
-        getData(dict10,chat_id,"For Downloading 👇")
-        getData(dict1010,chat_id,"For Streaming 👇")
+        getData(dict10, chat_id, "For Downloading 👇")
+        getData(dict1010, chat_id, "For Streaming 👇")
 
 
 update_id = None
 
 #'For Downloading 👇'
 #'For Streaming 👇'
-def getData(data,chat_id,message):
+
+
+def getData(data, chat_id, message):
     reply1 = message
     send = requests.post(url+'sendMessage?chat_id=' +
-                            str(chat_id)+'&text='+reply1)
+                         str(chat_id)+'&text='+reply1)
     for link in data.values():
         reply = link
         send = requests.post(url+'sendMessage?chat_id=' +
-                                str(chat_id)+'&text='+reply)
-    
+                             str(chat_id)+'&text='+reply)
+
 
 def get_updates(url, offset):
     url = url+'getUpdates?timeout=100'
