@@ -342,9 +342,53 @@ def send_message(url, chat_id, message):
     elif message == 's010':
         getData(dict10,chat_id,"For Downloading 👇")
         getData(dict1010,chat_id,"For Streaming 👇")
+#ross gaadu
+    elif message  =='ross':
+        reply = '''Hey ! iam Ross Geller. iam an Archeologist. iam the king of Divorces!😂 
+        my 1st wife is Carol who turned into lesbian after 7 years of marraige 
+        my 2nd wife is "Emily"  YOU know what i said rachel's name when I was marrying emily Thank God i said it right here atleast 
+        my 3rd wife is Rachel . I love her the most ❤️ 
+        i have a son and a daughter Ben and Emma they are the best to know more see here https://g.co/kgs/EHbdwi'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
-
-update_id = None
+#rachel papa
+    elif message  =='rachel':
+        reply = '''Rachel Karen Green is a fictional character, one of the six main characters who appeared in the American sitcom Friends. Portrayed by Jennifer Aniston,Introduced in the show's pilot as a naïve runaway bride who reunites with her childhood best friend Monica Geller and relocates to New York City,
+        Rachel gradually evolves from a spoiled, inexperienced "daddy's girl" into a successful businesswoman. During the show's second season, the character becomes romantically involved with Monica's brother, Ross, with whom she maintains a complicated on-off relationship throughout the series. Together, Ross and Rachel have a daughter, Emma.to know more https://g.co/kgs/HcMmdm'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)   
+        
+#chandler mowa   
+    elif message  =='chandler':
+        reply = '''Chandler Muriel Bing is a fictional character from the NBC sitcom Friends, portrayed by actor Matthew Perry. Chandler was born to Nora Tyler Bing, an erotic romance novelist, and Charles Bing, a gay female impersonator and star of a Las Vegas drag show called "Viva Las Gay-gas" as Helena Handbasket.Chandler's best friend is Joey Tribbiani, who is his roommate.
+        He previously lived with his good friend Ross Geller. He met Ross' sister, Monica Geller, and her friend, Rachel Green, while celebrating Thanksgiving at Ross' parents' house. To know more https://g.co/kgs/e2Cibe'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+    
+#joey anna
+    elif message  =='joey':
+        reply = '''Joseph Francis Tribbiani Jr. is a fictional character, serving as one of the primary characters of the NBC sitcom Friends and the main protagonist of its spin-off Joey. He is portrayed by Matt LeBlanc in both series.He is an Italian-American struggling actor who lives in New York City with his roommate and best friend, Chandler Bing (Matthew Perry),
+        and hangs out in a tight-knit group of his best friends: Chandler, Ross Geller (David Schwimmer), Monica Geller (Courteney Cox), Rachel Green (Jennifer Aniston), and Phoebe Buffay (Lisa Kudrow). He lived with a few other roommates when Chandler moved out to move in with Monica. To know more https://g.co/kgs/u3WJkm'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+        
+#miss phoebe
+    elif message  =='phoebe' or 'pheobe':
+        reply = '''Phoebe Buffay is a fictional character, portrayed by Lisa Kudrow, one of the six main characters from the American sitcom Friends. Phoebe has a twin sister, Ursula, a waitress who is also portrayed by Kudrow. Phoebe can speak several languages, including French and Italian.
+        She plays acoustic guitar and sings simple, awkward songs at Central Perk, occasionally busking also. During the show's ninth season, Phoebe is set up on a blind date with Mike Hannigan (played by actor Paul Rudd) and they eventually marry . To know more https://g.co/kgs/bmK5jq'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+        
+#monica (mylove❤️)
+    elif message  =='monica' or '❤️':
+        reply = ''' Monica E. Geller is a fictional character, one of the six main characters who appears on the American sitcom Friends. Portrayed by actress Courteney Cox . A chef known for her cleanliness, competitiveness and obsessive-compulsive nature, Monica is the younger sister of Ross Geller and best friend of Rachel Green, 
+        the latter of whom she invites to live with her after Rachel forsakes her own wedding. The two characters spend several years living together as roommates until Monica begins a romantic relationship with long-time neighbor and friend Chandler Bing, whom she marries. To know more https://g.co/kgs/xJLuo4 ❤️❤️❤️  '''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+        
+#centralperk
+    elif message  =='centralperk' or 'central perk':
+        reply = '''Muffin and espresso: $4.50 
+                Double latte: $2.75
+                Coffee and a scone: $4.25
+                Herbal tea: $1.25'''
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
+    
 
 #'For Downloading 👇'
 #'For Streaming 👇'
@@ -356,6 +400,8 @@ def getData(data,chat_id,message):
         reply = link
         send = requests.post(url+'sendMessage?chat_id=' +
                                 str(chat_id)+'&text='+reply)
+        
+update_id = None
     
 
 def get_updates(url, offset):
