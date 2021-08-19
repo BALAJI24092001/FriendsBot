@@ -1,5 +1,4 @@
 import requests
-from requests.api import request
 url = 'https://api.telegram.org/bot1974553065:AAGm9ZRmLymL9bWx-inSxEIKLTigQHGgtT4/'
 
 # s01 = {'0': 'https://t.me/friends25yrs/6', '1': 'https://t.me/friends25yrs/7', '2': 'https://t.me/friends25yrs/8', '3': 'https://t.me/friends25yrs/11', '4': 'https://t.me/friends25yrs/13', '5': 'https://t.me/friends25yrs/14', '6': 'https://t.me/friends25yrs/15', '7': 'https://t.me/friends25yrs/16', '8': 'https://t.me/friends25yrs/17', '9': 'https://t.me/friends25yrs/20', '10': 'https://t.me/friends25yrs/21', '11': 'https://t.me/friends25yrs/22',
@@ -78,37 +77,22 @@ def send_message(url, chat_id, message):
 # start
     elif message == '/start':
         reply = '''
-        Hola! 
-        I'm the F.R.I.E.N.D.S bot, here 
-        to help you with downloing the 
-        series.
+Hola! 
+I'm the F.R.I.E.N.D.S bot, here to help you with downloing the series.
 
-        👉Use `s01e01` to download episode 
-        1 of season 1.👈
+👉Use `s01e01` to download episode 1 of season 1.👈
 
-        Use `s05` to download season 5 
-        all episodes.👈
+👉Use `s05` to download season 5 all episodes.👈
 
-        If you want to know more about 
-        the series and some interesting 
-        facts about our main charecters, 
-        use their first name as the 
-        command.👈
+👉To know more about the sitcome use the command `friends`.👈
 
-        For any help regarding the 
-        commands, use the command 
-        `help` or `/help`. 👈
+👉If you want to know more about the series and some interesting facts about our main charecters, use their first name as the command.👈
 
-        To get to know about the 
-        developers use the command 
-        `info`.
+👉For any help regarding the commands, use the command `help` or `/help`. 👈
 
-        PS: The episode and season 
-        commands give you two ways to 
-        access the series. One, direcly 
-        download the episode another to 
-        stream it online using "playit" 
-        app in your mobiles.
+👉To get to know about the developers use the command `info`.👈
+
+PS: The episode and season commands give you two ways to access the series. One, direcly download the episode another to stream it online using "playit" app in your mobiles.
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
@@ -125,6 +109,21 @@ def send_message(url, chat_id, message):
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
+
+    # BALAJI
+    elif message == 'friends':
+        reply = '''
+        Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons.
+        Starring	
+Jennifer Aniston
+Courteney Cox
+Lisa Kudrow
+Matt LeBlanc
+Matthew Perry
+David Schwimmer
+        '''
+        
+    # BALAJI
 
     elif message in dict1.keys():
         reply1 = 'For Downloading 👇'
