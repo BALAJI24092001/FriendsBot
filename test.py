@@ -413,7 +413,7 @@ Episodes: 236
 #rachel papa
     elif message  =='rachel':
         reply = '''Rachel Karen Green is a fictional character, one of the six main characters who appeared in the American sitcom Friends. Portrayed by Jennifer Aniston,Introduced in the show's pilot as a naïve runaway bride who reunites with her childhood best friend Monica Geller and relocates to New York City,
-        Rachel gradually evolves from a spoiled, inexperienced "daddy's girl" into a successful businesswoman. During the show's second season, the character becomes romantically involved with Monica's brother, Ross, with whom she maintains a complicated on-off relationship throughout the series. Together, Ross and Rachel have a daughter, Emma.to know more https://g.co/kgs/HcMmdm'''
+        Rachel gradually evolves from a spoiled, inexperienced "daddy's girl" into a successful businesswoman. During the show's second season, the character becomes romantically involved with Monica's brother, Ross, with whom she maintains a complicated on-off relationship throughout the series. Together, Ross and Rachel have a daughter, Emma. To know more https://g.co/kgs/HcMmdm'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)   
         
 #chandler mowa   
