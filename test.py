@@ -116,7 +116,7 @@ PS: The episode and season commands give you two ways to access the series. One,
                              str(chat_id)+'&text='+reply)
 
     # help
-    elif message == 'help':
+    elif message == 'help' or message == '/help':
         reply = '''
         Hello Hooman! 
 
@@ -429,19 +429,19 @@ Episodes: 236
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
         
 #miss phoebe
-    elif message  =='phoebe' or 'pheobe':
+    elif message  =='phoebe' or message == 'pheobe':
         reply = '''Phoebe Buffay is a fictional character, portrayed by Lisa Kudrow, one of the six main characters from the American sitcom Friends. Phoebe has a twin sister, Ursula, a waitress who is also portrayed by Kudrow. Phoebe can speak several languages, including French and Italian.
         She plays acoustic guitar and sings simple, awkward songs at Central Perk, occasionally busking also. During the show's ninth season, Phoebe is set up on a blind date with Mike Hannigan (played by actor Paul Rudd) and they eventually marry . To know more https://g.co/kgs/bmK5jq'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
         
 #monica (mylove❤️)
-    elif message  =='monica' or '❤️':
+    elif message  =='monica' or message == '❤️':
         reply = ''' Monica E. Geller is a fictional character, one of the six main characters who appears on the American sitcom Friends. Portrayed by actress Courteney Cox . A chef known for her cleanliness, competitiveness and obsessive-compulsive nature, Monica is the younger sister of Ross Geller and best friend of Rachel Green, 
         the latter of whom she invites to live with her after Rachel forsakes her own wedding. The two characters spend several years living together as roommates until Monica begins a romantic relationship with long-time neighbor and friend Chandler Bing, whom she marries. To know more https://g.co/kgs/xJLuo4 ❤️❤️❤️  '''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
         
 #centralperk
-    elif message  =='centralperk' or 'central perk':
+    elif message  =='centralperk' or message == 'central perk':
         reply = '''Muffin and espresso: $4.50 
                 Double latte: $2.75
                 Coffee and a scone: $4.25
