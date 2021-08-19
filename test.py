@@ -66,6 +66,7 @@ wishes2 = ['good morning', 'gud mrng', 'morning']
 wishes3 = ['good enening', 'gud evng', 'good evng', 'evening']
 wishes4 = ['good night', 'gud night', 'gud ngt']
 
+
 def send_message(url, chat_id, message):
     if message in wishes1:
         reply = "How u doin'😉"
@@ -171,11 +172,13 @@ Opening theme song, "I'll be There for You" by "The Rembrandts".
 
 Running time:
 20–22 minutes (per episode)
-22–65 minutes (extended international TV & DVD episodes)
+22–65 minutes (extended international TV and DVD episodes)
 
 Seasons : 10
 Episodes: 236
     '''
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
 
     # BALAJI
 
