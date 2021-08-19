@@ -62,13 +62,14 @@ dict99 = {'s09e01': 'https://kuklink.com/1/bnYyZnh4MDA1dG9l', 's09e02': 'https:/
 dict1010 = {'s10e01': 'https://kuklink.com/1/bnYyZnk1MDAyam5h', 's10e02': 'https://kuklink.com/1/bnYyZnk1MDA0cTFo', 's10e03': 'https://kuklink.com/1/bnYyZnk1MDA1cHNi', 's10e04': 'https://kuklink.com/1/bnYyZnk1MDA0M2Np', 's10e05': 'https://kuklink.com/1/bnYyZnk1MDAzang2', 's10e06': 'https://kuklink.com/1/bnYyZnk1MDAzaGZk', 's10e07': 'https://kuklink.com/1/bnYyZnk1MDAwbWs1', 's10e08': 'https://kuklink.com/1/bnYyZnk1MDA0dDEx', 's10e09': 'https://kuklink.com/1/bnYyZnk1MDAyZ3Y0', 's10e10': 'https://kuklink.com/1/bnYyZnk1MDAzcnpq', 's10e11': 'https://kuklink.com/1/bnYyZnk1MDAzZTVs', 's10e12': 'https://kuklink.com/1/bnYyZnk1MDAyMHVw',
             's10e13': 'https://kuklink.com/1/bnYyZnk1MDAzYWdh', 's10e14': 'https://kuklink.com/1/bnYyZnk1MDAxcTM3', 's10e15': 'https://kuklink.com/1/bnYyZnk1MDA0bG9t', 's10e16': 'https://kuklink.com/1/bnYyZnk1MDAxYzR1', 's10e17': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh', 's10e18': 'https://kuklink.com/1/bnYyZnk1MDA1cnZh'}
 
+wishes = ['hi', 'hello', 'hey', 'hai', 'hii']
+
 
 def send_message(url, chat_id, message):
-    if message == 'hi':
+    if message in wishes:
         reply = "How u doin'😉"
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
-        print(send)
         # return send
 
 # start
@@ -79,21 +80,21 @@ def send_message(url, chat_id, message):
         to help you with downloing the 
         series.
 
-        Use `s01e01` to download episode 
-        1 of season 1.
+        👉Use `s01e01` to download episode 
+        1 of season 1.👈
 
         Use `s05` to download season 5 
-        all episodes.
+        all episodes.👈
 
         If you want to know more about 
         the series and some interesting 
         facts about our main charecters, 
         use their first name as the 
-        command.
+        command.👈
 
         For any help regarding the 
         commands, use the command 
-        `help` or `/help`. 
+        `help` or `/help`. 👈
 
         To get to know about the 
         developers use the command 
