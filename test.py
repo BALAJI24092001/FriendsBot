@@ -1,6 +1,6 @@
 import requests
 url = 'https://api.telegram.org/bot1974553065:AAGm9ZRmLymL9bWx-inSxEIKLTigQHGgtT4/'
-
+joeymowa = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fdakotahmpeck%2Fhow-you-doin%2F&psig=AOvVaw2oo02muYF4m-UJ4-_Hh6s-&ust=1629438769574000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiYlsmyvPICFQAAAAAdAAAAABAS"
 dict1 = {'s01e01': 'https://t.me/friends25yrs/6', 's01e02': 'https://t.me/friends25yrs/7', 's01e03': 'https://t.me/friends25yrs/8', 's01e04': 'https://t.me/friends25yrs/11', 's01e05': 'https://t.me/friends25yrs/13', 's01e06': 'https://t.me/friends25yrs/14', 's01e07': 'https://t.me/friends25yrs/15', 's01e08': 'https://t.me/friends25yrs/16', 's01e09': 'https://t.me/friends25yrs/17', 's01e10': 'https://t.me/friends25yrs/20', 's01e11': 'https://t.me/friends25yrs/21', 's01e12': 'https://t.me/friends25yrs/22',
          's01e13': 'https://t.me/friends25yrs/23', 's01e14': 'https://t.me/friends25yrs/24', 's01e15': 'https://t.me/friends25yrs/25', 's01e16': 'https://t.me/friends25yrs/27', 's01e17': 'https://t.me/friends25yrs/28', 's01e18': 'https://t.me/friends25yrs/29', 's01e19': 'https://t.me/friends25yrs/30', 's01e20': 'https://t.me/friends25yrs/31', 's01e21': 'https://t.me/friends25yrs/32', 's01e22': 'https://t.me/friends25yrs/33', 's01e23': 'https://t.me/friends25yrs/35', 's01e24': 'https://t.me/friends25yrs/37'}
 
@@ -90,6 +90,33 @@ I'm the F.R.I.E.N.D.S bot, here to help you with downloing the series.
 👉To get to know about the developers use the command `info`.👈
 
 PS: The episode and season commands give you two ways to access the series. One, direcly download the episode another to stream it online using "playit" app in your mobiles.
+        '''
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
+#help 
+    elif message == 'help':
+        reply = '''
+        Hello Hooman! 
+        I'm here to help you know 
+        about the commands.
+        To get the 1st episode of 1st 
+        season, use 's01e01'
+        Similarly, for 17th episode in 
+        10th season, use 's10e17'
+        And to get the full season, 
+        use 's01', 's07', 's10',...etc
+        If you want to know more about 
+        the series and some interesting 
+        facts about our main charecters, 
+        use their first name as the 
+        command.
+        My creators are always there to 
+        help you out.
+        For any further help, please contact
+        @dbalajivaraprasad
+        @CHAKRADHAR_GBG
+        @abhiramavala
         '''
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
