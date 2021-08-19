@@ -113,6 +113,33 @@ def send_message(url, chat_id, message):
         send = requests.post(url+'sendMessage?chat_id=' +
                              str(chat_id)+'&text='+reply)
 
+#help 
+    elif message == 'help':
+        reply = '''
+        Hello Hooman! 
+        I'm here to help you know 
+        about the commands.
+        To get the 1st episode of 1st 
+        season, use 's01e01'
+        Similarly, for 17th episode in 
+        10th season, use 's10e17'
+        And to get the full season, 
+        use 's01', 's07', 's10',...etc
+        If you want to know more about 
+        the series and some interesting 
+        facts about our main charecters, 
+        use their first name as the 
+        command.
+        My creators are always there to 
+        help you out.
+        For any further help, please contact
+        @dbalajivaraprasad
+        @CHAKRADHAR_GBG
+        @abhiramavala
+        '''
+        send = requests.post(url+'sendMessage?chat_id=' +
+                             str(chat_id)+'&text='+reply)
+
 # info
     elif message == 'info':
         reply = '''
