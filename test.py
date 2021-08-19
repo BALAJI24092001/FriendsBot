@@ -2,9 +2,6 @@ import requests
 from requests.api import request
 url = 'https://api.telegram.org/bot1974553065:AAGm9ZRmLymL9bWx-inSxEIKLTigQHGgtT4/'
 
-# s01 = {'0': 'https://t.me/friends25yrs/6', '1': 'https://t.me/friends25yrs/7', '2': 'https://t.me/friends25yrs/8', '3': 'https://t.me/friends25yrs/11', '4': 'https://t.me/friends25yrs/13', '5': 'https://t.me/friends25yrs/14', '6': 'https://t.me/friends25yrs/15', '7': 'https://t.me/friends25yrs/16', '8': 'https://t.me/friends25yrs/17', '9': 'https://t.me/friends25yrs/20', '10': 'https://t.me/friends25yrs/21', '11': 'https://t.me/friends25yrs/22',
-#  '12': 'https://t.me/friends25yrs/23', '13': 'https://t.me/friends25yrs/24', '14': 'https://t.me/friends25yrs/25', '15': 'https://t.me/friends25yrs/27', '16': 'https://t.me/friends25yrs/28', '17': 'https://t.me/friends25yrs/29', '18': 'https://t.me/friends25yrs/30', '19': 'https://t.me/friends25yrs/31', '20': 'https://t.me/friends25yrs/32', '21': 'https://t.me/friends25yrs/33', '22': 'https://t.me/friends25yrs/35', '23': 'https://t.me/friends25yrs/37'}
-
 dict1 = {'s01e01': 'https://t.me/friends25yrs/6', 's01e02': 'https://t.me/friends25yrs/7', 's01e03': 'https://t.me/friends25yrs/8', 's01e04': 'https://t.me/friends25yrs/11', 's01e05': 'https://t.me/friends25yrs/13', 's01e06': 'https://t.me/friends25yrs/14', 's01e07': 'https://t.me/friends25yrs/15', 's01e08': 'https://t.me/friends25yrs/16', 's01e09': 'https://t.me/friends25yrs/17', 's01e10': 'https://t.me/friends25yrs/20', 's01e11': 'https://t.me/friends25yrs/21', 's01e12': 'https://t.me/friends25yrs/22',
          's01e13': 'https://t.me/friends25yrs/23', 's01e14': 'https://t.me/friends25yrs/24', 's01e15': 'https://t.me/friends25yrs/25', 's01e16': 'https://t.me/friends25yrs/27', 's01e17': 'https://t.me/friends25yrs/28', 's01e18': 'https://t.me/friends25yrs/29', 's01e19': 'https://t.me/friends25yrs/30', 's01e20': 'https://t.me/friends25yrs/31', 's01e21': 'https://t.me/friends25yrs/32', 's01e22': 'https://t.me/friends25yrs/33', 's01e23': 'https://t.me/friends25yrs/35', 's01e24': 'https://t.me/friends25yrs/37'}
 
@@ -295,177 +292,71 @@ def send_message(url, chat_id, message):
 
     # season 1
     elif message == 's01':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict1.keys():
-            reply = dict1[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict11.keys():
-            reply = dict11[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict1,chat_id,"For Downloading 👇")
+        getData(dict11,chat_id,"For Streaming 👇")
 
     # season 2
     elif message == 's02':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict2.keys():
-            reply = dict2[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict22.keys():
-            reply = dict22[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict2,chat_id,"For Downloading 👇")
+        getData(dict22,chat_id,"For Streaming 👇")
 
     # season 3
     elif message == 's03':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict3.keys():
-            reply = dict3[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict33.keys():
-            reply = dict33[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict3,chat_id,"For Downloading 👇")
+        getData(dict33,chat_id,"For Streaming 👇")
 
     # season 4
     elif message == 's04':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict4.keys():
-            reply = dict4[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict44.keys():
-            reply = dict44[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict4,chat_id,"For Downloading 👇")
+        getData(dict44,chat_id,"For Streaming 👇")
 
     # season 5
     elif message == 's05':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict5.keys():
-            reply = dict5[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict55.keys():
-            reply = dict55[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict5,chat_id,"For Downloading 👇")
+        getData(dict55,chat_id,"For Streaming 👇")
 
     # season 6
     elif message == 's06':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict6.keys():
-            reply = dict6[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict66.keys():
-            reply = dict66[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict6,chat_id,"For Downloading 👇")
+        getData(dict66,chat_id,"For Streaming 👇")
 
     # season 7
     elif message == 's07':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict7.keys():
-            reply = dict7[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict77.keys():
-            reply = dict77[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict7,chat_id,"For Downloading 👇")
+        getData(dict77,chat_id,"For Streaming 👇")
+
 
     # season 8
     elif message == 's08':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict8.keys():
-            reply = dict8[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict88.keys():
-            reply = dict88[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict8,chat_id,"For Downloading 👇")
+        getData(dict88,chat_id,"For Streaming 👇")
+
 
     # season 9
     elif message == 's09':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict9.keys():
-            reply = dict9[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict99.keys():
-            reply = dict99[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+       getData(dict9,chat_id,"For Downloading 👇")
+       getData(dict99,chat_id,"For Streaming 👇")
+
 
     # season 10
     elif message == 's010':
-        reply1 = 'For Downloading 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        for i in dict10.keys():
-            reply = dict10[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
-        reply3 = 'For Streaming 👇'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        for i in dict1010.keys():
-            reply = dict1010[i]
-            send = requests.post(url+'sendMessage?chat_id=' +
-                                 str(chat_id)+'&text='+reply)
+        getData(dict10,chat_id,"For Downloading 👇")
+        getData(dict1010,chat_id,"For Streaming 👇")
 
 
 update_id = None
 
+#'For Downloading 👇'
+#'For Streaming 👇'
+def getData(data,chat_id,message):
+    reply1 = message
+    send = requests.post(url+'sendMessage?chat_id=' +
+                            str(chat_id)+'&text='+reply1)
+    for link in data.values():
+        reply = link
+        send = requests.post(url+'sendMessage?chat_id=' +
+                                str(chat_id)+'&text='+reply)
+    
 
 def get_updates(url, offset):
     url = url+'getUpdates?timeout=100'
