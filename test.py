@@ -448,8 +448,8 @@ Episodes: 236
                 Herbal tea: $1.25'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
     
-        getData(dict10, chat_id, "For Downloading 👇")
-        getData(dict1010, chat_id, "For Streaming 👇")
+        # getData(dict10, chat_id, "For Downloading 👇")
+        # getData(dict1010, chat_id, "For Streaming 👇")
 
 
 update_id = None
