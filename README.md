@@ -30,11 +30,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 ## Create a bot
 
 This bot is created in python using the requests module.
-To know how exactly the telegram bot is made and what are the other dependencies used, contact the authors.  
 
-To clone the repository use
-`git clone https://github.com/BALAJI24092001/TelegramBot.git`
-also contact the developers before making any changes.
 
 Further guidelines will be added soon.....
 ## License
