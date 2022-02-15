@@ -35,7 +35,7 @@ Select the bot and disable the privacy settings. By default, the privacy setting
 
 The bot is now created and can be accessable by the users from anywhere. But we didn't train the bot to reply to the commands. For this, we can directly train it from the BotFather itself, which is less efficient than training with any programming language.
 
-Follow the code form `test.py` file to understand how the telegram api, get and post command works.
+Follow the code form `./src/bot.py` file to understand how the telegram api's, get and post command works.
 
 ## Authors ##
 - [@BALAJI24092001](https://www.github.com/BALAJI24092001)
