@@ -1,6 +1,9 @@
 import requests
-url = 'https://api.telegram.org/bot/'
-#joeymowa = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fdakotahmpeck%2Fhow-you-doin%2F&psig=AOvVaw2oo02muYF4m-UJ4-_Hh6s-&ust=1629438769574000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiYlsmyvPICFQAAAAAdAAAAABAS"
+
+url = 'https://api.telegram.org/bot' # add the API token to the end of the url
+# url = url + API_Token + "/"
+
+# Links to get files to download
 dict1 = {'s01e01': 'https://t.me/friends25yrs/6', 's01e02': 'https://t.me/friends25yrs/7', 's01e03': 'https://t.me/friends25yrs/8', 's01e04': 'https://t.me/friends25yrs/11', 's01e05': 'https://t.me/friends25yrs/13', 's01e06': 'https://t.me/friends25yrs/14', 's01e07': 'https://t.me/friends25yrs/15', 's01e08': 'https://t.me/friends25yrs/16', 's01e09': 'https://t.me/friends25yrs/17', 's01e10': 'https://t.me/friends25yrs/20', 's01e11': 'https://t.me/friends25yrs/21', 's01e12': 'https://t.me/friends25yrs/22',
          's01e13': 'https://t.me/friends25yrs/23', 's01e14': 'https://t.me/friends25yrs/24', 's01e15': 'https://t.me/friends25yrs/25', 's01e16': 'https://t.me/friends25yrs/27', 's01e17': 'https://t.me/friends25yrs/28', 's01e18': 'https://t.me/friends25yrs/29', 's01e19': 'https://t.me/friends25yrs/30', 's01e20': 'https://t.me/friends25yrs/31', 's01e21': 'https://t.me/friends25yrs/32', 's01e22': 'https://t.me/friends25yrs/33', 's01e23': 'https://t.me/friends25yrs/35', 's01e24': 'https://t.me/friends25yrs/37'}
 
@@ -28,6 +31,8 @@ dict8 = {'s08e01': 'https://t.me/friendscompletesubtitle/682', 's08e02': 'https:
 dict9 = {'s09e01': 'https://t.me/friendscompletesubtitle/708', 's09e02': 'https://t.me/friendscompletesubtitle/709', 's09e03': 'https://t.me/friendscompletesubtitle/710', 's09e04': 'https://t.me/friendscompletesubtitle/711', 's09e05': 'https://t.me/friendscompletesubtitle/712', 's09e06': 'https://t.me/friendscompletesubtitle/713', 's09e07': 'https://t.me/friendscompletesubtitle/714', 's09e08': 'https://t.me/friendscompletesubtitle/715', 's09e09': 'https://t.me/friendscompletesubtitle/716', 's09e10': 'https://t.me/friendscompletesubtitle/717', 's09e11': 'https://t.me/friendscompletesubtitle/718', 's09e12': 'https://t.me/friendscompletesubtitle/719',
          's09e13': 'https://t.me/friendscompletesubtitle/720', 's01e14': 'https://t.me/friendscompletesubtitle/721', 's09e15': 'https://t.me/friendscompletesubtitle/722', 's09e16': 'https://t.me/friendscompletesubtitle/723', 's09e17': 'https://t.me/friendscompletesubtitle/724', 's09e18': 'https://t.me/friendscompletesubtitle/725', 's09e19': 'https://t.me/friendscompletesubtitle/726', 's09e20': 'https://t.me/friendscompletesubtitle/727', 's09e21': 'https://t.me/friendscompletesubtitle/728', 's09e22': 'https://t.me/friendscompletesubtitle/729', 's09e23': 'https://t.me/friendscompletesubtitle/730', 's09e24': 'https://t.me/friendscompletesubtitle/730'}
 
+# Links to watch the series live using playit app
+# Playit links are updated and the app is also comparmised, link are no more working
 dict10 = {'s10e01': 'https://t.me/friendscompletesubtitle/732', 's10e02': 'https://t.me/friendscompletesubtitle/733', 's10e03': 'https://t.me/friendscompletesubtitle/734', 's10e04': 'https://t.me/friendscompletesubtitle/735', 's10e05': 'https://t.me/friendscompletesubtitle/737', 's10e06': 'https://t.me/friendscompletesubtitle/738', 's10e07': 'https://t.me/friendscompletesubtitle/739', 's10e08': 'https://t.me/friendscompletesubtitle/740', 's10e09': 'https://t.me/friendscompletesubtitle/741', 's10e10': 'https://t.me/friendscompletesubtitle/742', 's10e11': 'https://t.me/friendscompletesubtitle/743', 's10e12': 'https://t.me/friendscompletesubtitle/744',
           's10e13': 'https://t.me/friendscompletesubtitle/745', 's10e14': 'https://t.me/friendscompletesubtitle/746', 's10e15': 'https://t.me/friendscompletesubtitle/747', 's10e16': 'https://t.me/friendscompletesubtitle/748', 's10e17': 'https://t.me/friendscompletesubtitle/749', 's10e18': 'https://t.me/friendscompletesubtitle/749'}
 
@@ -70,28 +75,23 @@ wishes4 = ['good night', 'gud night', 'gud ngt']
 def send_message(url, chat_id, message):
     if message in wishes1:
         reply = "How u doin'😉"
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     elif message in wishes2:
         reply = 'Very goog moring, hope you had a good sleep.'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     elif message in wishes3:
         reply = 'Good evening.'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     elif message in wishes4:
         reply = 'Good night, have a good sleep.'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     elif message in ['thanks', 'thank you', 'thanks a lot', 'Thanks for the help', 'tnks']:
         reply = 'Anything for you!'
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     elif message == '/start':
         reply = '''
@@ -112,8 +112,7 @@ I'm the F.R.I.E.N.D.S bot, here to help you with downloing the series.
 
 PS: The episode and season commands give you two ways to access the series. One, direcly download the episode another to stream it online using "playit" app in your mobiles.
         '''
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     # help
     elif message == 'help' or message == '/help':
@@ -150,8 +149,7 @@ PS: The episode and season commands give you two ways to access the series. One,
         @CHAKRADHAR_GBG
         @abhiramavala
         '''
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
 
     #episodes
@@ -169,8 +167,7 @@ PS: The episode and season commands give you two ways to access the series. One,
         Season 9 - 24 Episodes
         Season 10 - 18 Episodes
         '''
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
 # info
     elif message == 'info':
@@ -182,8 +179,7 @@ PS: The episode and season commands give you two ways to access the series. One,
         @CHAKRADHAR_GBG
         @abhiramavala
         '''
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     # BALAJI
     elif message == 'friends':
@@ -207,8 +203,7 @@ Running time:
 Seasons : 10
 Episodes: 236
     '''
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
     # BALAJI
 
@@ -217,190 +212,183 @@ Episodes: 236
         reply2 = dict1[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict11[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+#        Playit links not working, removing option to display in the reply
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict2.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict2[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict22[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict3.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict3[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict33[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict4.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict4[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict44[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict5.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict5[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict55[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict6.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict6[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict66[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict7.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict7[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict77[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict8.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict8[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict88[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict9.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict9[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict99[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     elif message in dict10.keys():
         reply1 = 'For Downloading 👇'
         reply2 = dict10[message]
         reply3 = 'For Streaming 👇'
         reply4 = dict1010[message]
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply1)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply2)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply3)
-        send = requests.post(url+'sendMessage?chat_id=' +
-                             str(chat_id)+'&text='+reply4)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply2)
+
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply3)
+#        send = requests.post(url+'sendMessage?chat_id=' +
+#                             str(chat_id)+'&text='+reply4)
 
     # season 1
     elif message == 's01':
         getData(dict1, chat_id, "For Downloading 👇")
-        getData(dict11, chat_id, "For Streaming 👇")
+#        getData(dict11, chat_id, "For Streaming 👇")
 
     # season 2
     elif message == 's02':
         getData(dict2, chat_id, "For Downloading 👇")
-        getData(dict22, chat_id, "For Streaming 👇")
+#        getData(dict22, chat_id, "For Streaming 👇")
 
     # season 3
     elif message == 's03':
         getData(dict3, chat_id, "For Downloading 👇")
-        getData(dict33, chat_id, "For Streaming 👇")
+#        getData(dict33, chat_id, "For Streaming 👇")
 
     # season 4
     elif message == 's04':
         getData(dict4, chat_id, "For Downloading 👇")
-        getData(dict44, chat_id, "For Streaming 👇")
+#        getData(dict44, chat_id, "For Streaming 👇")
 
     # season 5
     elif message == 's05':
         getData(dict5, chat_id, "For Downloading 👇")
-        getData(dict55, chat_id, "For Streaming 👇")
+#        getData(dict55, chatd, "For Streaming 👇")
 
     # season 6
     elif message == 's06':
         getData(dict6, chat_id, "For Downloading 👇")
-        getData(dict66, chat_id, "For Streaming 👇")
+#        getData(dict66, chat_id, "For Streaming 👇")
 
     # season 7
     elif message == 's07':
         getData(dict7, chat_id, "For Downloading 👇")
-        getData(dict77, chat_id, "For Streaming 👇")
+#        getData(dict77, chat_id, "For Streaming 👇")
 
     # season 8
     elif message == 's08':
         getData(dict8, chat_id, "For Downloading 👇")
-        getData(dict88, chat_id, "For Streaming 👇")
+#        getData(dict88, chat_id, "For Streaming 👇")
 
     # season 9
     elif message == 's09':
         getData(dict9, chat_id, "For Downloading 👇")
-        getData(dict99, chat_id, "For Streaming 👇")
+#        getData(dict99, chat_id, "For Streaming 👇")
 
     # season 10
     elif message == 's010':
         getData(dict10,chat_id,"For Downloading 👇")
-        getData(dict1010,chat_id,"For Streaming 👇")
+#        getData(dict1010,chat_id,"For Streaming 👇")
+
+
+
 #ross gaadu
     elif message  =='ross':
         reply = '''Hey ! iam Ross Geller. iam an Archeologist. iam the king of Divorces!😂 
@@ -410,7 +398,7 @@ Episodes: 236
         i have a son and a daughter Ben and Emma they are the best to know more see here https://g.co/kgs/EHbdwi'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
-#rachel papa
+#rachel
     elif message  =='rachel':
         reply = '''Rachel Karen Green is a fictional character, one of the six main characters who appeared in the American sitcom Friends. Portrayed by Jennifer Aniston,Introduced in the show's pilot as a naïve runaway bride who reunites with her childhood best friend Monica Geller and relocates to New York City,
         Rachel gradually evolves from a spoiled, inexperienced "daddy's girl" into a successful businesswoman. During the show's second season, the character becomes romantically involved with Monica's brother, Ross, with whom she maintains a complicated on-off relationship throughout the series. Together, Ross and Rachel have a daughter, Emma. To know more https://g.co/kgs/HcMmdm'''
@@ -428,13 +416,13 @@ Episodes: 236
         and hangs out in a tight-knit group of his best friends: Chandler, Ross Geller (David Schwimmer), Monica Geller (Courteney Cox), Rachel Green (Jennifer Aniston), and Phoebe Buffay (Lisa Kudrow). He lived with a few other roommates when Chandler moved out to move in with Monica. To know more https://g.co/kgs/u3WJkm'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
         
-#miss phoebe
+#phoebe akkai
     elif message  =='phoebe' or message == 'pheobe':
         reply = '''Phoebe Buffay is a fictional character, portrayed by Lisa Kudrow, one of the six main characters from the American sitcom Friends. Phoebe has a twin sister, Ursula, a waitress who is also portrayed by Kudrow. Phoebe can speak several languages, including French and Italian.
         She plays acoustic guitar and sings simple, awkward songs at Central Perk, occasionally busking also. During the show's ninth season, Phoebe is set up on a blind date with Mike Hannigan (played by actor Paul Rudd) and they eventually marry . To know more https://g.co/kgs/bmK5jq'''
         send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
         
-#monica (mylove❤️)
+#monica
     elif message  =='monica' or message == '❤️':
         reply = ''' Monica E. Geller is a fictional character, one of the six main characters who appears on the American sitcom Friends. Portrayed by actress Courteney Cox . A chef known for her cleanliness, competitiveness and obsessive-compulsive nature, Monica is the younger sister of Ross Geller and best friend of Rachel Green, 
         the latter of whom she invites to live with her after Rachel forsakes her own wedding. The two characters spend several years living together as roommates until Monica begins a romantic relationship with long-time neighbor and friend Chandler Bing, whom she marries. To know more https://g.co/kgs/xJLuo4 ❤️❤️❤️  '''
@@ -460,17 +448,10 @@ update_id = None
 
 def getData(data, chat_id, message):
     reply1 = message
-    send = requests.post(url+'sendMessage?chat_id=' +
-                         str(chat_id)+'&text='+reply1)
+    send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply1)
     for link in data.values():
         reply = link
-        send = requests.post(url+'sendMessage?chat_id=' +
-                                str(chat_id)+'&text='+reply)
-        
-update_id = None
-    
-                             
-
+        send = requests.post(url+'sendMessage?chat_id=' + str(chat_id)+'&text='+reply)
 
 def get_updates(url, offset):
     url = url+'getUpdates?timeout=100'
@@ -480,6 +461,7 @@ def get_updates(url, offset):
     return r
 
 
+update_id = None
 while True:
     print(".....")
     updates = get_updates(url, offset=update_id)
