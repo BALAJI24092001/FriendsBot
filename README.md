@@ -10,7 +10,7 @@ A telegram bot, created using python to make the series F.R.I.E.N.D.S, available
 
 ## Create a bot ##  
 <div>
-<img src="./images/BotFatherLogo.jpg" width = 150 style="float:right"/>
+<img src="./images/BotFatherLogo.jpg" width = 150 align="right"/>
 <p>The first step is to create a bot from the BotFather bot, which is a official telegram bot by Telegram. Follow the below steps to create a bot, name the bot, give a usermane for the bot, change the privacy setting for the bot. 
 
 Bot commands can also be managed from the BotFather bot manager bot itself. But for our flexibility we use python, where we can even establish a database connection for user data.</p>
@@ -19,14 +19,14 @@ Bot commands can also be managed from the BotFather bot manager bot itself. But 
 
 <br>
 
-<p style="text-align: center">
+<p align='center'>
 <img src="./images/img1.png" width=320 /> <img src="./images/img2.png" width=320 > 
 </p>
 
 Use the command `/newbot` to start creating a new bot. Give the bot, a name, user name and the bot will give an API key.
 
 
-<p style="text-align: center">
+<p align='center'>
 <img src="./images/img3.png" width=320 /> <img src="./images/img4.png" width=320 /> 
 </p>
 
